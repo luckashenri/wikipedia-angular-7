@@ -1,0 +1,16 @@
+<div class="main-container">
+  <div class="group">
+    <div class="logo">
+      <img src="../assets/logo.png" alt="">
+    </div>
+    <form [formGroup]="searchForm" class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Search" formControlName="term" required>
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="doSearch()" routerLink="search">Search</button>
+    </form>
+    <div class="credits">Desenvolvido por Lucas Henrique de Oliveira</div>
+  </div>
+  
+</div>

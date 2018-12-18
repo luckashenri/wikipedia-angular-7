@@ -1,0 +1,32 @@
+<div class="main-container">
+  
+  <div class="top-bar">
+    <img src="../../assets/icon.jpg" alt="" routerLink="/">
+    <form [formGroup]="searchForm" class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Search" formControlName="term">
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="doSearch()">Search</button>
+    </form>
+  </div>
+  
+  <mat-divider></mat-divider>
+  
+  <div class="search-content">
+
+    <h2 *ngIf="term != ''">Searched for "{{term}}"</h2>
+    <h2 *ngIf="term === ''">You did not search</h2>
+
+    <div *ngFor="let item of response">
+      <mat-card>
+        <mat-card-title>{{item.title}}</mat-card-title>
+        {{item.description}}
+        <mat-card-actions>
+        <a mat-button target="_blank" href="{{item.link}}">More</a>  
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+</div>

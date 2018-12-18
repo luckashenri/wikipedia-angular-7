@@ -1,0 +1,8 @@
+{
+  "/w/*": {
+    "target": "https://pt.wikipedia.org",
+    "secure": false,
+    "changeOrigin": true,
+    "LogLevel": "debug"
+  }
+}

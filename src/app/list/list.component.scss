@@ -1,0 +1,39 @@
+.main-container {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  height: 100vh;
+  .top-bar {
+    display: flex;
+    align-items: center;
+    img {
+      width: 50px;
+      margin-right: 1em;
+    }
+    mat-form-field {
+      width: 634px;
+      margin-right: 8px;
+    }
+  }
+
+  mat-divider {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .search-content {
+    max-width: 716px;
+    margin-left: 66px;
+  }
+
+}
+
+mat-card {
+  box-shadow: none;
+  margin-bottom: 1em;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
